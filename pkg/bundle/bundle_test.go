@@ -13,7 +13,7 @@ func TestReadTopLevelProperties(t *testing.T) {
 	json := `{
 		"name": "foo",
 		"version": "1.0",
-		"images": [],
+		"images": {},
 		"credentials": {}
 	}`
 	bundle, err := Unmarshal([]byte(json))
@@ -47,15 +47,12 @@ func TestReadImageProperties(t *testing.T) {
 	if len(bundle.Images) != 2 {
 		t.Errorf("Expected 2 images, got %d", len(bundle.Images))
 	}
-	image1 := bundle.Images[0]
+	image1 := bundle.Images["image1"]
 	if image1.Description != "image1" {
 		t.Errorf("Expected description 'image1', got '%s'", image1.Description)
 	}
 	if image1.Image != "urn:image1uri" {
 		t.Errorf("Expected Image 'urn:image1uri', got '%s'", image1.Image)
-	}
-	if len(image1.Refs) != 1 {
-		t.Errorf("Expected 1 ref, got %d", len(image1.Refs))
 	}
 }
 
