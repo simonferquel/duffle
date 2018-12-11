@@ -50,6 +50,9 @@ func getImageMap(b *bundle.Bundle) ([]byte, error) {
 
 func opFromClaim(action string, c *claim.Claim, ii bundle.InvocationImage, creds credentials.Set, w io.Writer) (*driver.Operation, error) {
 	env, files, err := creds.Expand(c.Bundle)
+	if err != nil {
+		return nil, err
+	}
 
 	// Quick verification that no params were passed that are not actual legit params.
 	for key := range c.Parameters {
@@ -98,5 +101,5 @@ func opFromClaim(action string, c *claim.Claim, ii bundle.InvocationImage, creds
 		Environment:  env,
 		Files:        files,
 		Out:          w,
-	}, err
+	}, nil
 }
