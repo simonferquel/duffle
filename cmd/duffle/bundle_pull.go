@@ -13,9 +13,9 @@ import (
 	"github.com/docker/distribution/reference"
 	"github.com/spf13/cobra"
 
-	"github.com/deis/duffle/pkg/crypto/digest"
-	"github.com/deis/duffle/pkg/duffle/home"
-	"github.com/deis/duffle/pkg/image"
+	"github.com/deislabs/duffle/pkg/crypto/digest"
+	"github.com/deislabs/duffle/pkg/duffle/home"
+	"github.com/deislabs/duffle/pkg/image"
 )
 
 func newBundlePullCmd(w io.Writer) *cobra.Command {

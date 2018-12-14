@@ -4,7 +4,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/deis/duffle/pkg/bundle"
+	"github.com/deislabs/duffle/pkg/bundle"
 
 	"github.com/technosophos/moniker"
 )
@@ -16,7 +16,7 @@ type Manifest struct {
 	Description      string                                `json:"description,omitempty" mapstructure:"description,omitempty"`
 	Keywords         []string                              `json:"keywords,omitempty" mapstructure:"keywords,omitempty"`
 	Maintainers      []bundle.Maintainer                   `json:"maintainers,omitempty" mapstructure:"maintainers,omitempty"`
-	InvocationImages map[string]*InvocationImage           `json:"invocationImages,omitempty" mapstructure:"invocationImages,omitempty"`
+	InvocationImages map[string]*bundle.InvocationImage           `json:"invocationImages,omitempty" mapstructure:"invocationImages,omitempty"`
 	Images           map[string]bundle.Image               `json:"images,omitempty" mapstructure:"images,omitempty"`
 	Actions          map[string]bundle.Action              `json:"actions,omitempty" mapstructure:"actions,omitempty"`
 	Parameters       map[string]bundle.ParameterDefinition `json:"parameters,omitempty" mapstructure:"parameters,omitempty"`

@@ -13,7 +13,7 @@ Duffle is a command line tool that allows you to install and manage CNAB bundles
 
 2. Clone this repo:
     ```console
-    $ cd $GOPATH/src/github.com/deis/
+    $ cd $GOPATH/src/github.com/deislabs/
     $ git clone git@github.com:deis/duffle.git
     $ cd duffle
     ```
@@ -62,7 +62,7 @@ Duffle is a command line tool that allows you to install and manage CNAB bundles
 
     *Notes:*
     * Learn more about what a bundle is and its components [here](https://github.com/deislabs/cnab-spec/blob/master/100-CNAB.md).
-    * Get a feel for what CNAB bundles look like by referencing the [bundles repo](https://github.com/deis/bundles) on github.
+    * Get a feel for what CNAB bundles look like by referencing the [bundles repo](https://github.com/deislabs/bundles) on github.
 
 # Debugging using VS Code
 
