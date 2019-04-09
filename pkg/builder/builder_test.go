@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/deislabs/duffle/pkg/bundle"
+	"github.com/deislabs/cnab-go/bundle"
 	"github.com/deislabs/duffle/pkg/duffle/manifest"
 	"github.com/deislabs/duffle/pkg/imagebuilder"
 )

@@ -13,7 +13,7 @@ import (
 	"github.com/docker/docker/client"
 	"github.com/docker/docker/pkg/archive"
 
-	"github.com/deislabs/duffle/pkg/bundle"
+	"github.com/deislabs/cnab-go/bundle"
 	"github.com/deislabs/duffle/pkg/loader"
 )
 

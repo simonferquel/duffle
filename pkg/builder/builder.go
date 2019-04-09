@@ -13,7 +13,7 @@ import (
 	"github.com/Masterminds/semver"
 	"github.com/pkg/errors"
 
-	"github.com/deislabs/duffle/pkg/bundle"
+	"github.com/deislabs/cnab-go/bundle"
 	"github.com/deislabs/duffle/pkg/duffle/manifest"
 	"github.com/deislabs/duffle/pkg/imagebuilder"
 )

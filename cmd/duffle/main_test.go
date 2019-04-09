@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/deislabs/duffle/pkg/bundle"
+	"github.com/deislabs/cnab-go/bundle"
 	"github.com/deislabs/duffle/pkg/credentials"
 
 	"github.com/ghodss/yaml"

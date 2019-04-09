@@ -13,7 +13,7 @@ import (
 	survey "gopkg.in/AlecAivazis/survey.v1"
 	yaml "gopkg.in/yaml.v2"
 
-	"github.com/deislabs/duffle/pkg/bundle"
+	"github.com/deislabs/cnab-go/bundle"
 	"github.com/deislabs/duffle/pkg/credentials"
 	"github.com/deislabs/duffle/pkg/duffle/home"
 )

@@ -18,8 +18,8 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 
+	"github.com/deislabs/cnab-go/bundle"
 	"github.com/deislabs/duffle/pkg/builder"
-	"github.com/deislabs/duffle/pkg/bundle"
 	"github.com/deislabs/duffle/pkg/crypto/digest"
 	"github.com/deislabs/duffle/pkg/duffle/home"
 	"github.com/deislabs/duffle/pkg/duffle/manifest"
